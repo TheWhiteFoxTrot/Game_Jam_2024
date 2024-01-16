@@ -6,13 +6,13 @@ public class Collider_Detector : MonoBehaviour
 {
 
     // Targeting 
-    // Adding more objects to trigger apone add a new gameobject name Target_For_Switch_[Letter]
+    // Adding more objects to trigger upon add a new gameobject name Target_For_Switch_[Letter]
     // Adding a string with name Target_Name_[Letter of Target_For_Switch] 
     // from there on void start conntect Target_Name_[Letter of Target] = Target_For_Switch_[Letter of Target].gameObject.name;
 
     public GameObject Target_For_Switch_A;
     string Target_Name_A;
-
+    public Sprite Transformed;
 
     // Trigger 0 must be always true when starting the program.
     // if more triggers are needed format is Trigger[Number].
@@ -37,8 +37,7 @@ public class Collider_Detector : MonoBehaviour
             {
                 Debug.Log("Debug: Trigger 1 = Active");
 
-                // Asset switch 
-
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = Transformed;
                 // Activating next trigger
                 Trigger1 = true;
                 Trigger0 = false;
