@@ -9,12 +9,14 @@ public class MovableObjectController : MonoBehaviour
 
     void OnMouseDown()
     {
+        Debug.Log("drag");
         isDragging = true;
         offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
     void OnMouseUp()
     {
+        Debug.Log("stopdrag");
         isDragging = false;
     }
 
@@ -23,7 +25,9 @@ public class MovableObjectController : MonoBehaviour
         if (isDragging)
         {
             Vector2 cursorPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Debug.Log("cursor: "+ cursorPosition);
             transform.position = cursorPosition + offset;
+            Debug.Log("offset: "+ cursorPosition+offset);
         }
     }
 }
