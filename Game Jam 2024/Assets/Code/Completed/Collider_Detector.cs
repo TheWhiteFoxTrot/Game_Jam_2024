@@ -12,6 +12,7 @@ public class Collider_Detector : MonoBehaviour
 
     public GameObject Target_For_Switch_A;
     string Target_Name_A;
+    public Sprite StartAsset;
     public Sprite Transformed;
 
     // Trigger 0 must be always true when starting the program.
@@ -23,6 +24,7 @@ public class Collider_Detector : MonoBehaviour
     {
         Debug.Log("Script started!");
 
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = StartAsset;
         // Gethering the name of the object for trigger
         Target_Name_A = Target_For_Switch_A.gameObject.name;
     }
