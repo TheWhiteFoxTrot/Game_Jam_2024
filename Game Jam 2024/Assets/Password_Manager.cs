@@ -31,7 +31,7 @@ public class Password_Manager : MonoBehaviour
     {
         switch (InputText.text)
         {
-            case "PP56":
+            case "Long Schlong123":
                 Hide_Canvise_Bool = false;
                 Hide_canvise_GB.SetActive(Hide_Canvise_Bool);
                 break;
