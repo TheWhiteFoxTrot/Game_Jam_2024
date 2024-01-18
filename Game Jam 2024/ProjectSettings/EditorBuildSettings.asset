@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start Screen.unity
+    path: Assets/Scenes/EXPORTED/Start Screen.unity
     guid: a645712bd0a7c7349bc3fab009cef973
   - enabled: 1
-    path: Assets/Scenes/The Finals.unity
+    path: Assets/Scenes/EXPORTED/The Finals.unity
     guid: dc1909651c888bd4ca5be847966b3d41
   m_configObjects: {}
