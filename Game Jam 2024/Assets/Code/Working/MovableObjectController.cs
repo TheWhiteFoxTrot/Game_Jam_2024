@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovableObjectController : MonoBehaviour
 {
-    private bool isDragging = false;
+    public bool isDragging = false;
     private Vector2 offset;
 
     void OnMouseDown()
