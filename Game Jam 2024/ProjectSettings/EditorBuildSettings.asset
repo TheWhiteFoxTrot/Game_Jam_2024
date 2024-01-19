@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EXPORTED/The Finals.unity
     guid: dc1909651c888bd4ca5be847966b3d41
+  - enabled: 1
+    path: Assets/Scenes/EXPORTED/Credits.unity
+    guid: e7a05b657650a254abdb7bf6abf6931b
   m_configObjects: {}

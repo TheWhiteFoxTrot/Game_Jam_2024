@@ -723,7 +723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &470106193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,8 +1507,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6679682985019335137, guid: 199dd056c22c1554dbba89096072391e, type: 3}
+      propertyPath: lither
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679682985019335137, guid: 199dd056c22c1554dbba89096072391e, type: 3}
       propertyPath: NectLevel
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6679682985019335137, guid: 199dd056c22c1554dbba89096072391e, type: 3}
       propertyPath: StartAsset
