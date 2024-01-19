@@ -10,6 +10,7 @@ public class Collider_Detector : MonoBehaviour
     // Adding a string with name Target_Name_[Letter of Target_For_Switch] 
     // from there on void start conntect Target_Name_[Letter of Target] = Target_For_Switch_[Letter of Target].gameObject.name;
 
+    public GameObject objectToSpawn
     public GameObject Target_For_Switch_A;
     string Target_Name_A;
     public Sprite StartAsset;
@@ -38,7 +39,7 @@ public class Collider_Detector : MonoBehaviour
             if (collision2D.gameObject.name == Target_Name_A)
             {
                 Debug.Log("Debug: Trigger 1 = Active");
-
+                Instantiate(objectToSpawn);
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = Transformed;
                 // Activating next trigger
                 Trigger1 = true;
